@@ -30,6 +30,7 @@ class Calculator {
         this.currentOperand = ''
     }
 
+    // All Operands
     compute() {
         let computation
         const prev = parseFloat(this.previousOperand)
@@ -56,6 +57,7 @@ class Calculator {
         this.previousOperand = ''
     }
 
+    // Output
     getDisplayNumber(number) {
         const stringNumber = number.toString()
         const integerDigits = parseFloat(stringNumber.split('.')[0])
